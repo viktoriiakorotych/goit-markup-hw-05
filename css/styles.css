@@ -506,12 +506,14 @@ body {
 .footer-container-list {
   display: flex;
   align-items: baseline;
-  margin-right: 120px;
+  /* margin-right: 120px; */
   gap: 120px;
+  margin-right: auto;
 }
 
 .footer-container-logo {
   margin-right: 120px;
+
 }
 
 .footer-logo {
@@ -522,6 +524,8 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4D5AE5;
+  margin-bottom: 17px;
+
 }
 
 .logo-web-footer {
@@ -532,13 +536,17 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #F4F4FD;
+  margin-bottom: 17px;
+
 }
 
 .footer-text {
-  line-height: 1.5;
-  color: var(--accent-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color:#F4F4FD;
   max-width: 264px;
-  margin-top: 16px;
 }
 
 .footer-soc-text {
@@ -725,7 +733,16 @@ transform: translateY(0%);
   justify-content: center;
   align-items: center; */
 
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .modal {
@@ -737,32 +754,184 @@ transform: translateY(0%);
   min-height: 584px;
   overflow-y: auto;
   border-radius: 4px;
-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 24px; 
 }
+
+.modal-close {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+}
+
 
 .modal-main-text{
   font-family: "Roboto", sans-serif;
-  font-size: 36px;
-  font-weight: 700;
+  font-weight: 500;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
   text-align: center;
   color: #2E2F42;
-  padding-top: 360px;
-  padding-left: 24px;
+  min-height: 24px;
+  padding-top: 72px;
+  margin-bottom: 16px;
+  align-items: center;
+}
+
+.modal-button {
+
+}
+
+
+.modal-container-close span{
+  border-radius: 100%;
+  background-color:  #E7E9FC;
+  border-radius: 1px solid #8e8f99;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 24;
+  top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-icon-x { 
+  fill: #2E2F42;
+}
+
+.modal-close:checked + .modal-container-close span {
+  border-radius: 100%;
+  border-radius: 1px solid #404BBF;
+  background-color: #404BBF;
+ fill: #F4F4FD;
+}
+
+
+.modal-form{
+
 }
 
 .modal-label {
-  color: #8E8F99;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  
+  margin-bottom: 8px;
 }
 
-.modal-label::placeholder {
-  /* color: #2e2f42; */
-color: rgba(142, 143, 153, 0.4);
+.modal-comment,
+.modal-input {
+  width: 100%;
+  height: 58px;
+  margin-bottom: 8px;
+  border: 1px solid  rgba(142, 143, 153, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  padding-left: 38px;
+  outline: transparent;
+  transition: border-color 300ms linear;
+}
 
+.modal-comment {
+  height: 120px;
+  padding-left: 16px;
+  resize: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+/* .modal-input::placeholder, */
+.modal-comment::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: rgba(142, 143, 153, 0.4);
+  margin-bottom: 16px;
+}
+
+.modal-comment:hover,
+.modal-comment:focus,
+.modal-comment:active,
+.modal-input:hover, 
+.modal-input:focus,
+.modal-input:active {
+border: 1px solid #4D5AE5;
+}
+
+.modal-input:hover + .modal-icon,
+.modal-input:focus + .modal-icon,
+.modal-input:active + .modal-icon {
+  fill: #4D5AE5;
+}
+
+.modal-icon {
+  position: absolute;
+  fill: #2E2F42;
+  stroke: transparent;
+  left: 16px; 
+  top: 50%;
+  transform: translateY(-50%);
+  transition: border-color 300ms linear;
+}
+
+.modal-input-wrap {
+  position: relative;
+}
+
+.moda-policy-checkbox{
+  margin-bottom: 24px;
+  margin-right: 8px;
+}
+
+.modal-policy-label{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.modal-policy-label span {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
 }
 
 .modal-policy-link {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
   color: #4D5AE5;
 }
 
+.moda-policy-checkbox:checked + .modal-policy-label span{
+  background-color: #404BBF;
+  fill: #F4F4FD;
+}
+
+.modal-check-icon{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 
