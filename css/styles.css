@@ -506,9 +506,8 @@ body {
 .footer-container-list {
   display: flex;
   align-items: baseline;
-  /* margin-right: 120px; */
+  margin-right: 120px;
   gap: 120px;
-  margin-right: auto;
 }
 
 .footer-container-logo {
@@ -549,6 +548,10 @@ body {
   max-width: 264px;
 }
 
+.footer-container-social {
+  margin-right: 80px;
+}
+
 .footer-soc-text {
   color: var(--white-color);
   font-weight: 500;
@@ -566,6 +569,21 @@ body {
 .footer-soc-link:hover,
 .footer-soc-link:focus {
   background-color: #31d0aa;
+}
+
+.footer-container-subscribe{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-subscribe-label {
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.footer-subscribe-input {
+  margin-right: 24px;
 }
 
 /*______________________________________PORTFOLIO_______________________*/
