@@ -877,16 +877,16 @@ padding: 72px 24px 24px 24px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close:checked + .modal-container-close span {
+/* .modal-close:checked + .modal-container-close span {
   border-radius: 100%;
   border-radius: 1px solid #404BBF;
   background-color: #404BBF;
   fill: #F4F4FD;
-}
+} */
 
-.modal-icon-x:hover {
+.modal-icon-x:hover,
+.modal-icon-x:focus {
   fill: #ffffff;
-
 }
 
 .modal-block{
