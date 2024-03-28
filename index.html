@@ -552,25 +552,25 @@
               </svg>
             </div>
           </div>
-          <div class="modal-block">
-            <label for="modal-comment" class="modal-label"> Comment </label>
+          <div class="modal-block comment-block">
+            <label for="user-comment" class="modal-label"> Comment </label>
             <textarea
               class="modal-comment"
-              id="modal-comment"
-              name="modal-comment"
+              id="user-comment"
+              name="user-comment"
               placeholder="Text input"
             ></textarea>
           </div>
-          <div class="modal-block">
+          <div class="modal-block policy-block">
             <input
               class="moda-policy-checkbox visually-hidden"
               type="checkbox"
-              id="modal-policy"
-              name="modal-policy"
-              value="modal-policy"
+              id="user-privacy"
+              name="user-privacy"
+              value="true"
               required
             />
-            <label class="modal-policy-label" for="modal-policy">
+            <label class="modal-policy-label" for="user-privacy">
               <span>
                 <svg class="modal-check-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-ckeckbox"></use>
@@ -580,7 +580,7 @@
               <a class="modal-policy-link link" href=" "> Privacy Policy </a>
             </label>
           </div>
-          <button type="submit">Send</button>
+          <button class="modal-send-button" type="submit">Send</button>
         </form>
       </div>
     </div>
