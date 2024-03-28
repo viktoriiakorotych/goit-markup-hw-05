@@ -433,7 +433,7 @@
     <!-- <div class="modal-overlay is-open"> -->
     <div class="modal-overlay">
       <div class="modal">
-        <button class="modal-close visually-hidden" type="modal-button"> </button> 
+        <button class="modal-close visually-hidden" type="button"> </button> 
         <div class="modal-container-close">
           <span>          
             <svg class="modal-icon-x" width="8" height="8">
@@ -569,9 +569,16 @@
         </div>
         <div class="footer-container-subscribe">
           <p class="footer-soc-text">Subscribe</p>
-          <label class="footer-subscribe-label visually-hidden for="subscribe" >Subscribe</label>
-          <input class="footer-subscribe-input" type="email" id="subscribe" name="subscribe" placeholder="E-Mail">
-          <button class="footer-button-submit" type="submit">Subscribe</button>
+          <form class="footer-form">
+            <label class="footer-subscribe-label visually-hidden" for="subscribe"> Subscribe
+            <input class="footer-subscribe-input" type="email" id="subscribe" name="subscribe" placeholder="E-Mail">
+            </label>
+            <button class="footer-button-submit" type="submit">Subscribe
+              <svg class="footer-button-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-footer-button"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
