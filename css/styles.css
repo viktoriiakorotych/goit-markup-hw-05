@@ -838,7 +838,7 @@ padding: 72px 24px 24px 24px;
 
 .modal-close:hover,
 .modal-close:focus  {
-  background-color: #404bbf; 
+ background-color: #404bbf; 
   border: none; 
 }
 
@@ -927,8 +927,7 @@ margin-bottom: 8px;
   height: 120px;
   padding-left: 16px;
   resize: none;
-  padding-top: 8px;
-  padding-bottom: 8px;
+   padding: 8px 16px; 
 }
 
 /* .modal-input::placeholder, */
@@ -1049,5 +1048,8 @@ border: 1px solid #4D5AE5;
   height: 56px;
   }
 
-
+.modal-policy-span {
+  width: 16px; 
+  display: inline-flex; 
+}
 
