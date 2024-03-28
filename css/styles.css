@@ -988,6 +988,12 @@ border: 1px solid #4D5AE5;
   align-items: center;
   line-height: 1.17;
 }
+.modal-policy-span {
+  height: 16px; 
+  width: 16px; 
+  display: inline-flex;
+}
+
 
 .modal-policy-label span {
   height: 16px; 
