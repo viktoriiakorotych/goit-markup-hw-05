@@ -1021,15 +1021,11 @@ border: 1px solid #4D5AE5;
   align-items: center;
   line-height: 1.17;
 }
-.modal-policy-span {
+
+.modal-policy-label span {
   height: 16px; 
   width: 16px; 
   display: inline-flex;
-}
-
-
-.modal-policy-label span {
-
   position: relative;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
