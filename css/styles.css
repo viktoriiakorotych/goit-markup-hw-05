@@ -858,6 +858,7 @@ padding: 72px 24px 24px 24px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  padding: 0; 
 }
 
 .modal-close:hover,
@@ -1080,7 +1081,7 @@ border: 1px solid #4D5AE5;
   background-color: #4D5AE5 ;
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  border-radius: 4px;
   display: block;
   min-width: 169px;
   height: 56px;
