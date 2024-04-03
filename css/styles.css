@@ -578,8 +578,8 @@ body {
 }
 
 .footer-form{
-   display: flex;
-      gap: 24px;
+  display: flex;
+  gap: 24px;
 }
 
 .footer-subscribe-label {
@@ -607,13 +607,13 @@ body {
   min-width: 165px; 
   height: 40px;
   display: flex; 
-   justify-content: center;
-align-items: center;
-font-family: "Roboto", sans-serif;
- font-size: 16px;
-font-weight: 500;
- line-height: 1.5;
- letter-spacing: 0.04em;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
   background-color: #4D5AE5;
@@ -923,7 +923,7 @@ padding: 72px 24px 24px 24px;
   fill: #ffffff;
 }
 */
-.modal-block{
+.modal-block {
 margin-bottom: 8px; 
 
 }
