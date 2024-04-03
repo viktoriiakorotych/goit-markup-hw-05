@@ -1014,7 +1014,7 @@ border: 1px solid #4D5AE5;
   font-size: 12px;
   letter-spacing: 0.04em;
   color: #8e8f99; 
-  display: flex;
+  /* display: flex; */
   align-items: center;
   line-height: 1.17;
 }
@@ -1022,7 +1022,7 @@ border: 1px solid #4D5AE5;
 .modal-policy-label span {
   height: 16px; 
   width: 16px; 
-  /* display: inline-flex; */
+  display: inline-flex;
   position: relative;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
